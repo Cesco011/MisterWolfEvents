@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0c1932">
+    <meta name="description" content="Prova il prototipo dimostrativo della biglietteria Mister Wolf Events. Nessun acquisto o pagamento reale.">
+    <title>Prototipo biglietteria | Mister Wolf Events</title>
+    <link rel="icon" href="assets/mister-wolf-logo.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#contenuto">Vai al contenuto</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="index.html" aria-label="Mister Wolf Events, pagina iniziale">
+          <span class="brand-logo"><img src="assets/mister-wolf-logo.png" alt="Mister Wolf"></span>
+          <span class="brand-name">MISTER WOLF <span>EVENTS</span></span>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation"><span class="menu-toggle-label">Menu</span><span class="menu-toggle-icon" aria-hidden="true"></span></button>
+        <nav class="site-nav" id="site-navigation" aria-label="Navigazione principale">
+          <a href="eventi.html" aria-current="page">Eventi</a>
+          <a href="chi-siamo.html">Chi siamo</a>
+          <a href="dove-operiamo.html">Dove operiamo</a>
+          <a class="nav-contact" href="index.html#contatti">Contatti <span aria-hidden="true">↗</span></a>
+        </nav>
+      </div>
+    </header>
+    <main id="contenuto">
+      <section class="page-hero section-wrap ticket-page-hero" aria-labelledby="page-title">
+        <div class="section-label"><span>01</span> Prototipo interattivo</div>
+        <h1 id="page-title">La tua serata,<br><em>in pochi passaggi.</em></h1>
+        <p>Seleziona una tipologia e la quantità per vedere come potrebbe apparire il riepilogo.</p>
+      </section>
+      <section class="ticket-demo section-wrap" aria-label="Selezione biglietti dimostrativa">
+        <p class="ticket-demo-notice">
+          Questa è solo una simulazione: nessun ordine o pagamento reale.
+          Eventi e disponibilità sono riportati dal calendario e non vengono verificati in tempo reale; i prezzi sono esempi.
+          Non si raccolgono dati personali.
+        </p>
+        <div class="ticket-layout">
+          <article class="ticket-event">
+            <img class="ticket-event-poster" id="ticket-event-poster" alt="" hidden>
+            <span class="event-category" id="ticket-event-category">Evento dimostrativo</span>
+            <h2 id="ticket-event-title">Una serata dal vivo</h2>
+            <p class="ticket-event-description" id="ticket-event-description">Artista, luogo e data saranno mostrati qui quando un evento sarà confermato.</p>
+            <div class="ticket-event-meta">
+              <span><strong>Data</strong><span class="ticket-meta-value" id="ticket-event-date">Da definire</span></span>
+              <span><strong>Luogo</strong><span class="ticket-meta-value" id="ticket-event-place">Da definire</span></span>
+            </div>
+            <p class="ticket-event-availability" id="ticket-event-availability" aria-live="polite"></p>
+            <p class="ticket-event-footnote">Per acquistare, controlla il canale ufficiale dell’evento o del teatro.</p>
+          </article>
+          <form class="ticket-form" id="ticket-form">
+            <h2>Seleziona un biglietto</h2>
+            <p class="ticket-form-intro">Tipologie e prezzi sono puramente dimostrativi e non corrispondono ai posti reali dell’evento.</p>
+            <div class="ticket-option">
+              <label for="quantity-platea">
+                <span class="ticket-option-name">Platea</span>
+                <span class="ticket-option-note">Posto non numerato · esempio</span>
+              </label>
+              <span class="ticket-price">€ 35,00</span>
+              <input id="quantity-platea" name="platea" type="number" min="0" max="6" step="1" value="0" inputmode="numeric" aria-label="Quantità biglietti platea, massimo 6">
+            </div>
+            <div class="ticket-option">
+              <label for="quantity-galleria">
+                <span class="ticket-option-name">Galleria</span>
+                <span class="ticket-option-note">Posto non numerato · esempio</span>
+              </label>
+              <span class="ticket-price">€ 25,00</span>
+              <input id="quantity-galleria" name="galleria" type="number" min="0" max="6" step="1" value="0" inputmode="numeric" aria-label="Quantità biglietti galleria, massimo 6">
+            </div>
+            <div class="ticket-total" aria-live="polite">
+              <span>Totale simulato</span>
+              <output id="ticket-total" for="quantity-platea quantity-galleria">€ 0,00</output>
+            </div>
+            <button class="button button-primary ticket-submit" type="submit">Simula riepilogo <span aria-hidden="true">↗</span></button>
+            <p class="ticket-status" id="ticket-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+        <section class="card-guide" aria-labelledby="card-guide-title">
+          <div class="card-guide-heading">
+            <div class="section-label"><span>02</span> Pagamento · solo dimostrativo</div>
+            <h2 id="card-guide-title">Dove trovi i dati<br><em>sulla carta.</em></h2>
+            <p>Queste sono illustrazioni indicative: colori e posizione dei dati possono variare in base alla banca. Usa solo dati inventati, non quelli di una carta vera.</p>
+          </div>
+          <div class="card-guide-content">
+            <div class="payment-methods" role="group" aria-label="Scegli il metodo di pagamento dimostrativo">
+              <button class="payment-method is-active" type="button" data-payment-method="visa" aria-pressed="true">Visa</button>
+              <button class="payment-method" type="button" data-payment-method="mastercard" aria-pressed="false">Mastercard</button>
+              <button class="payment-method" type="button" data-payment-method="bancomat" aria-pressed="false">Bancomat</button>
+              <button class="payment-method" type="button" data-payment-method="paypal" aria-pressed="false">PayPal</button>
+            </div>
+            <div class="card-guide-controls" role="group" aria-label="Scegli quale dato dimostrativo mostrare">
+              <button class="card-guide-control is-active" type="button" data-card-field-target="number" aria-pressed="true">
+                Numero <span>Fronte</span>
+              </button>
+              <button class="card-guide-control" type="button" data-card-field-target="name" aria-pressed="false">
+                Intestatario <span>Fronte</span>
+              </button>
+              <button class="card-guide-control" type="button" data-card-field-target="expiry" aria-pressed="false">
+                Scadenza <span>Fronte</span>
+              </button>
+              <button class="card-guide-control" type="button" data-card-field-target="security" aria-pressed="false">
+                Codice di sicurezza <span>Retro</span>
+              </button>
+              <button class="card-guide-control" type="button" data-card-field-target="wallet" aria-pressed="false" hidden>
+                Account demo <span>PayPal</span>
+              </button>
+            </div>
+            <div class="demo-card-stage">
+              <div class="demo-card" id="demo-card" data-method="visa" data-side="front" aria-label="Illustrazione dimostrativa di una carta Visa">
+                <div class="demo-card-face demo-card-front">
+                  <div class="demo-card-standard-content">
+                    <div class="demo-card-top">
+                      <span class="demo-card-chip" aria-hidden="true"></span>
+                      <span class="demo-card-contactless" aria-hidden="true"></span>
+                    </div>
+                    <span class="demo-card-demo-label">CARTA DIMOSTRATIVA</span>
+                    <div class="demo-card-number" data-card-field="number">0000 0000 0000 0000</div>
+                    <div class="demo-card-bottom">
+                      <span data-card-field="name"><small>INTESTATARIO</small>NOME ESEMPIO</span>
+                      <span data-card-field="expiry"><small>SCADENZA</small>MM/AA</span>
+                    </div>
+                    <span class="demo-card-brand"><span data-card-brand>VISA</span></span>
+                    <span class="demo-card-marker demo-card-marker-number" data-card-marker="number" aria-hidden="true">01</span>
+                    <span class="demo-card-marker demo-card-marker-name" data-card-marker="name" aria-hidden="true">02</span>
+                    <span class="demo-card-marker demo-card-marker-expiry" data-card-marker="expiry" aria-hidden="true">03</span>
+                  </div>
+                  <div class="demo-wallet-view" hidden>
+                    <div class="demo-wallet-brand">PayPal <span>DEMO</span></div>
+                    <p>Conferma con PayPal</p>
+                    <strong data-card-field="wallet">utente@example.test</strong>
+                    <span class="demo-wallet-action">Continua · simulazione</span>
+                    <span class="demo-card-marker demo-card-marker-wallet" data-card-marker="wallet" aria-hidden="true">01</span>
+                  </div>
+                </div>
+                <div class="demo-card-face demo-card-back">
+                  <span class="demo-card-magnetic" aria-hidden="true"></span>
+                  <div class="demo-card-signature"><span>FIRMA</span><strong data-card-field="security">•••</strong></div>
+                  <p>CVV · SOLO ESEMPIO</p>
+                  <span class="demo-card-marker demo-card-marker-security" data-card-marker="security" aria-hidden="true">04</span>
+                </div>
+              </div>
+            </div>
+            <p class="card-guide-hint" id="card-guide-hint" aria-live="polite">Sul fronte trovi il numero della carta, il nome dell’intestatario e la data di scadenza.</p>
+          </div>
+          <p class="card-guide-safety">Nel sito reale il pagamento dovrebbe avvenire solo su un checkout sicuro del provider. Questa pagina non chiede né tratta dati di pagamento.</p>
+        </section>
+      </section>
+      <section class="ticket-next-step section-wrap">
+        <a href="eventi.html">← Torna agli eventi</a>
+        <p>Per acquistare biglietti reali, faremo riferimento solo a eventi confermati e a un servizio di vendita sicuro.</p>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <a class="footer-brand" href="index.html">MISTER WOLF <span>EVENTS</span></a>
+      <p>Concerti · Spettacoli · Eventi</p>
+      <a class="back-to-top" href="#contenuto">Torna su <span aria-hidden="true">↑</span></a>
+      <small>© <span id="current-year">2026</span> Mister Wolf Events</small>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0c1932">
+    <meta name="description" content="Calendario di concerti, spettacoli e teatro Mister Wolf Events da novembre 2026 a dicembre 2027, con locandine e informazioni sulle date.">
+    <title>Eventi | Mister Wolf Events</title>
+    <link rel="icon" href="assets/mister-wolf-logo.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#contenuto">Vai al contenuto</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="index.html" aria-label="Mister Wolf Events, pagina iniziale">
+          <span class="brand-logo"><img src="assets/mister-wolf-logo.png" alt="Mister Wolf"></span>
+          <span class="brand-name">MISTER WOLF <span>EVENTS</span></span>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation"><span class="menu-toggle-label">Menu</span><span class="menu-toggle-icon" aria-hidden="true"></span></button>
+        <nav class="site-nav" id="site-navigation" aria-label="Navigazione principale">
+          <a href="eventi.html" aria-current="page">Eventi</a>
+          <a href="chi-siamo.html">Chi siamo</a>
+          <a href="dove-operiamo.html">Dove operiamo</a>
+          <a class="nav-contact" href="index.html#contatti">Contatti <span aria-hidden="true">↗</span></a>
+        </nav>
+      </div>
+    </header>
+    <main id="contenuto">
+      <section class="page-hero section-wrap" aria-labelledby="page-title">
+        <div class="section-label"><span>01</span> Dal vivo con noi</div>
+        <h1 id="page-title">Prossimi <em>eventi.</em></h1>
+        <p>Concerti, teatro e spettacoli: le date e le locandine condivise da Mister Wolf Events.</p>
+      </section>
+      <section class="events section-wrap" aria-label="Calendario eventi">
+        <p class="events-preview-notice">
+          Informazioni trascritte dagli screenshot e dalle locandine che ci hai inviato.
+          Controlla sempre i canali ufficiali prima di organizzare la serata: orari e
+          disponibilità possono cambiare. I link originali di acquisto non sono visibili
+          negli screenshot, quindi non abbiamo inserito collegamenti di vendita inventati.
+        </p>
+        <form class="event-filters" id="event-filters" aria-label="Filtra gli eventi">
+          <div class="filter-field">
+            <label for="filter-month">Mese</label>
+            <select id="filter-month" name="month"><option value="">Tutti i mesi</option></select>
+          </div>
+          <div class="filter-field">
+            <label for="filter-city">Città</label>
+            <select id="filter-city" name="city"><option value="">Tutte le città</option></select>
+          </div>
+          <div class="filter-field">
+            <label for="filter-category">Tipologia</label>
+            <select id="filter-category" name="category"><option value="">Tutte le tipologie</option></select>
+          </div>
+          <p class="filter-results" id="filter-results" aria-live="polite"></p>
+        </form>
+        <p class="event-no-results" id="event-no-results" hidden>Nessun evento corrisponde ai filtri scelti. Prova a modificarli.</p>
+        <section class="event-month" aria-labelledby="events-nov-2026">
+          <div class="event-month-heading"><h2 id="events-nov-2026">Novembre <em>2026</em></h2><span>7 appuntamenti</span></div>
+          <div class="event-grid">
+            <article class="event-card"><img class="event-poster" src="assets/posters/giovanni-cacioppo.jpg" alt="Locandina di Giovanni Cacioppo in CompilaSHOWn" loading="lazy"><div class="event-card-content"><div class="event-date"><span>07</span><span>NOV 2026</span></div><div class="event-details"><span class="event-category">Comicità</span><h3>Giovanni Cacioppo</h3><p class="event-subtitle">CompilaSHOWn</p><p>Mantova · Teatro Sociale</p><p class="event-time">Ore 21:00</p><span class="event-status is-available">Biglietti indicati disponibili</span></div></div></article>
+            <article class="event-card"><img class="event-poster" src="assets/posters/antonio-ornano.jpg" alt="Locandina di Antonio Ornano in (In)Grato" loading="lazy"><div class="event-card-content"><div class="event-date"><span>15</span><span>NOV 2026</span></div><div class="event-details"><span class="event-category">Comicità</span><h3>Antonio Ornano</h3><p class="event-subtitle">(In)Grato</p><p>Mantova · Teatro Sociale</p><p class="event-time">Ore 21:00</p><span class="event-status is-available">Biglietti indicati disponibili</span></div></div></article>
+            <article class="event-card"><img class="event-poster" src="assets/posters/virginia-raffaele.jpg" alt="Locandina di Virginia Raffaele in Bancàl" loading="lazy"><div class="event-card-content"><div class="event-date"><span>20</span><span>NOV 2026</span></div><div class="event-details"><span class="event-category">Spettacolo</span><h3>Virginia Raffaele</h3><p class="event-subtitle">Bancàl</p><p>Mantova · Teatro Sociale</p><p class="event-time">Ore 21:00</p><span class="event-status is-available">Biglietti indicati disponibili</span></div></div></article>
+            <article class="event-card"><img class="event-poster" src="assets/posters/virginia-raffaele.jpg" alt="Locandina di Virginia Raffaele in Bancàl" loading="lazy"><div class="event-card-content"><div class="event-date"><span>21</span><span>NOV 2026</span></div><div class="event-details"><span class="event-category">Spettacolo</span><h3>Virginia Raffaele</h3><p class="event-subtitle">Bancàl</p><p>Mantova · Teatro Sociale</p><p class="event-time">Ore 21:00</p><span class="event-status is-available">Biglietti indicati disponibili</span></div></div></article>
+            <article class="event-card"><img class="event-poster" src="assets/posters/i-legnanesi.jpg" alt="Locandina di I Legnanesi in C'era una volta" loading="lazy"><div class="event-card-content"><div class="event-date"><span>28</span><span>NOV 2026</span></div><div class="event-details"><span class="event-category">Teatro</span><h3>I Legnanesi</h3><p class="event-subtitle">C'era una volta</p><p>Mantova · PalaUnical Teatro</p><span class="event-status is-available">Biglietti indicati disponibili</span></div></div></article>
+            <article class="event-card"><img class="event-poster" src="assets/posters/luca-bizzarri.jpg" alt="Locandina di Luca Bizzarri in Non hanno un dubbio" loading="lazy"><div class="event-card-content"><div class="event-date"><span>28</span><span>NOV 2026</span></div><div class="event-details"><span class="event-category">Spettacolo</span><h3>Luca Bizzarri</h3><p class="event-subtitle">Non hanno un dubbio</p><p>Mantova · Teatro Sociale</p><p class="event-time">Ore 21:00</p><span class="event-status is-available">Biglietti indicati disponibili</span></div></div></article>
+            <article class="event-card"><img class="event-poster" src="assets/posters/dikele.jpg" alt="Locandina di Dikele a Teatro" loading="lazy"><div class="event-card-content"><div class="event-date"><span>29</span><span>NOV 2026</span></div><div class="event-details"><span class="event-category">Teatro</span><h3>Dikele</h3><p class="event-subtitle">Dikele a Teatro</p><p>Napoli · Teatro Bolivar</p><span class="event-status is-soldout">Sold out nello screenshot</span><a class="event-spotify" href="https://www.dikeleateatro.com/" target="_blank" rel="noopener noreferrer">Sito ufficiale <span aria-hidden="true">↗</span></a></div></div></article>
+          </div>
+        </section>
+        <section class="event-month" aria-labelledby="events-dec-2026">
+          <div class="event-month-heading"><h2 id="events-dec-2026">Dicembre <em>2026</em></h2><span>13 appuntamenti</span></div>
+          <div class="event-grid">
+            <article class="event-card"><img class="event-poster" src="assets/posters/dikele-roma-milano-torino.jpg" alt="Locandina delle date di Dikele a Teatro" loading="lazy"><div class="event-card-content"><div class="event-date"><span>01</span><span>DIC 2026</span></div><div class="event-details"><span class="event-category">Teatro</span><h3>Dikele</h3><p class="event-subtitle">Dikele a Teatro</p><p>Roma · Teatro de' Servi</p><span class="event-status is-soldout">Sold out nello screenshot</span><a class="event-spotify" href="https://www.dikeleateatro.com/" target="_blank" rel="noopener noreferrer">Sito ufficiale <span aria-hidden="true">↗</span></a></div></div></article>
+            <article class="event-card"><img class="event-poster" src="assets/posters/dikele-roma-milano-torino.jpg" alt="Locandina delle date di Dikele a Teatro" loading="lazy"><div class="event-card-content"><div class="event-date"><span>02</span><span>DIC 2026</span></div><div class="event-details"><span class="event-category">Teatro</span><h3>Dikele</h3><p class="event-subtitle">Dikele a Teatro · nuova data</p><p>Roma · Teatro de' Servi</p><span class="event-status is-new-date">Nuova data · biglietti indicati disponibili</span><a class="event-spotify" href="https://www.dikeleateatro.com/" target="_blank" rel="noopener noreferrer">Sito ufficiale <span aria-hidden="true">↗</span></a></div></div></article>
+            <article class="event-card"><img class="event-poster" src="assets/posters/oblivion-win-for-life.jpg" alt="Locandina del musical Win for Life degli Oblivion" loading="lazy"><div class="event-card-content"><div class="event-date"><span>03</span><span>DIC 2026</span></div><div class="event-details"><span class="event-category">Musical</span><h3>Oblivion</h3><p class="event-subtitle">Win for Life</p><p>Mantova · Teatro Sociale</p><p class="event-time">Ore 21:00</p><span class="event-status is-available">Biglietti indicati disponibili</span></div></div></article>
+            <article class="event-card"><img class="event-poster" src="assets/posters/dikele-roma-milano-torino.jpg" alt="Locandina delle date di Dikele a Teatro" loading="lazy"><div class="event-card-content"><div class="event-date"><span>03</span><span>DIC 2026</span></div><div class="event-details"><span class="event-category">Teatro</span><h3>Dikele</h3><p class="event-subtitle">Dikele a Teatro</p><p>Milano · Teatro Oscar</p><span class="event-status is-soldout">Sold out nello screenshot</span><a class="event-spotify" href="https://www.dikeleateatro.com/" target="_blank" rel="noopener noreferrer">Sito ufficiale <span aria-hidden="true">↗</span></a></div></div></article>
+            <article class="event-card"><img class="event-poster" src="assets/posters/dikele-roma-milano-torino.jpg" alt="Locandina delle date di Dikele a Teatro" loading="lazy"><div class="event-card-content"><div class="event-date"><span>04</span><span>DIC 2026</span></div><div class="event-details"><span class="event-category">Teatro</span><h3>Dikele</h3><p class="event-subtitle">Dikele a Teatro</p><p>Milano · Teatro Oscar</p><span class="event-status is-soldout">Sold out nello screenshot</span><a class="event-spotify" href="https://www.dikeleateatro.com/" target="_blank" rel="noopener noreferrer">Sito ufficiale <span aria-hidden="true">↗</span></a></div></div></article>
+            <article class="event-card"><img class="event-poster" src="assets/posters/dikele-roma-milano-torino.jpg" alt="Locandina delle date di Dikele a Teatro" loading="lazy"><div class="event-card-content"><div class="event-date"><span>05</span><span>DIC 2026</span></div><div class="event-details"><span class="event-category">Teatro</span><h3>Dikele</h3><p class="event-subtitle">Dikele a Teatro · nuova data</p><p>Milano · Teatro Oscar</p><span class="event-status is-new-date">Nuova data · biglietti indicati disponibili</span><a class="event-spotify" href="https://www.dikeleateatro.com/" target="_blank" rel="noopener noreferrer">Sito ufficiale <span aria-hidden="true">↗</span></a></div></div></article>
+            <article class="event-card"><img class="event-poster" src="assets/posters/irama.jpg" alt="Locandina del tour di Irama" loading="lazy"><div class="event-card-content"><div class="event-date"><span>06</span><span>DIC 2026</span></div><div class="event-details"><span class="event-category">Musica</span><h3>Irama</h3><p class="event-subtitle">A chi ci sarà sempre · Tour 2026</p><p>Mantova · PalaUnical</p><span class="event-status is-soldout">Sold out nello screenshot</span></div></div></article>
+            <article class="event-card"><img class="event-poster" src="assets/posters/dikele-roma-milano-torino.jpg" alt="Locandina delle date di Dikele a Teatro" loading="lazy"><div class="event-card-content"><div class="event-date"><span>11</span><span>DIC 2026</span></div><div class="event-details"><span class="event-category">Teatro</span><h3>Dikele</h3><p class="event-subtitle">Dikele a Teatro</p><p>Torino · Teatro Cardinal Massaia</p><span class="event-status is-soldout">Sold out nello screenshot</span><a class="event-spotify" href="https://www.dikeleateatro.com/" target="_blank" rel="noopener noreferrer">Sito ufficiale <span aria-hidden="true">↗</span></a></div></div></article>
+            <article class="event-card"><img class="event-poster" src="assets/posters/dikele-roma-milano-torino.jpg" alt="Locandina delle date di Dikele a Teatro" loading="lazy"><div class="event-card-content"><div class="event-date"><span>12</span><span>DIC 2026</span></div><div class="event-details"><span class="event-category">Teatro</span><h3>Dikele</h3><p class="event-subtitle">Dikele a Teatro · nuova data</p><p>Torino · Teatro Cardinal Massaia</p><span class="event-status is-new-date">Nuova data · biglietti indicati disponibili</span><a class="event-spotify" href="https://www.dikeleateatro.com/" target="_blank" rel="noopener noreferrer">Sito ufficiale <span aria-hidden="true">↗</span></a></div></div></article>
+            <article class="event-card"><img class="event-poster" src="assets/posters/christmas-carol.jpg" alt="Locandina del musical A Christmas Carol" loading="lazy"><div class="event-card-content"><div class="event-date"><span>12</span><span>DIC 2026</span></div><div class="event-details"><span class="event-category">Musical</span><h3>A Christmas Carol</h3><p class="event-subtitle">Musical</p><p>Mantova · Teatro Sociale</p><p class="event-time">Ore 16:30</p><span class="event-status is-available">Biglietti indicati disponibili</span></div></div></article>
+            <article class="event-card"><img class="event-poster" src="assets/posters/arianna-porcelli-safonov.jpg" alt="Locandina di Arianna Porcelli Safonov in Natale Acido" loading="lazy"><div class="event-card-content"><div class="event-date"><span>17</span><span>DIC 2026</span></div><div class="event-details"><span class="event-category">Spettacolo</span><h3>Arianna Porcelli Safonov</h3><p class="event-subtitle">Natale Acido</p><p>Mantova · Teatro Sociale</p><p class="event-time">Ore 21:00</p><span class="event-status is-available">Biglietti indicati disponibili</span></div></div></article>
+            <article class="event-card"><img class="event-poster" src="assets/posters/arisa.jpg" alt="Locandina del Live Tour di Arisa" loading="lazy"><div class="event-card-content"><div class="event-date"><span>18</span><span>DIC 2026</span></div><div class="event-details"><span class="event-category">Musica</span><h3>Arisa</h3><p class="event-subtitle">Live Tour</p><p>Mantova · PalaUnical Teatro</p><span class="event-status is-available">Biglietti indicati disponibili</span></div></div></article>
+            <article class="event-card"><img class="event-poster" src="assets/posters/back-to-hawkins.jpg" alt="Locandina di Back to Hawkins, tributo a Stranger Things" loading="lazy"><div class="event-card-content"><div class="event-date"><span>19</span><span>DIC 2026</span></div><div class="event-details"><span class="event-category">Musica</span><h3>Back to Hawkins</h3><p class="event-subtitle">Stranger Things Tribute</p><p>Mantova · PalaUnical Teatro</p><span class="event-status is-available">Biglietti indicati disponibili</span></div></div></article>
+          </div>
+        </section>
+        <section class="event-month" aria-labelledby="events-jan-2027">
+          <div class="event-month-heading"><h2 id="events-jan-2027">Gennaio <em>2027</em></h2><span>6 appuntamenti</span></div>
+          <div class="event-grid">
+            <article class="event-card"><img class="event-poster" src="assets/posters/maccio-mantova.jpg" alt="Locandina dello spettacolo teatrale di Maccio Capatonda a Mantova" loading="lazy"><div class="event-card-content"><div class="event-date"><span>14</span><span>GEN 2027</span></div><div class="event-details"><span class="event-category">Teatro</span><h3>Maccio Capatonda</h3><p class="event-subtitle">Spettacolo teatrale</p><p>Mantova · PalaUnical Teatro</p><span class="event-status is-available">Biglietti indicati disponibili</span></div></div></article>
+            <article class="event-card"><img class="event-poster" src="assets/posters/katia-follesa.jpg" alt="Locandina di Katia Follesa in No vabbè mi adoro" loading="lazy"><div class="event-card-content"><div class="event-date"><span>16</span><span>GEN 2027</span></div><div class="event-details"><span class="event-category">Spettacolo</span><h3>Katia Follesa</h3><p class="event-subtitle">No vabbè mi adoro</p><p>Mantova · Teatro Sociale</p><p class="event-time">Ore 20:30</p><span class="event-status is-available">Biglietti indicati disponibili</span></div></div></article>
+            <article class="event-card"><img class="event-poster" src="assets/posters/maccio-cremona.jpg" alt="Locandina dello spettacolo teatrale di Maccio Capatonda a Cremona" loading="lazy"><div class="event-card-content"><div class="event-date"><span>29</span><span>GEN 2027</span></div><div class="event-details"><span class="event-category">Teatro</span><h3>Maccio Capatonda</h3><p class="event-subtitle">Spettacolo teatrale</p><p>Cremona · Teatro Infinity1</p><span class="event-status is-available">Biglietti indicati disponibili</span></div></div></article>
+            <article class="event-card"><img class="event-poster" src="assets/posters/giovanni-storti-stefano-mancuso.jpg" alt="Locandina di Giovanni Storti e Stefano Mancuso in Lunga vita agli alberi" loading="lazy"><div class="event-card-content"><div class="event-date"><span>30</span><span>GEN 2027</span></div><div class="event-details"><span class="event-category">Spettacolo</span><h3>Giovanni Storti e Stefano Mancuso</h3><p class="event-subtitle">Lunga vita agli alberi</p><p>Mantova · Teatro Sociale</p><span class="event-status is-available">Biglietti indicati disponibili</span></div></div></article>
+            <article class="event-card"><img class="event-poster" src="assets/posters/maccio-bassano.jpg" alt="Locandina dello spettacolo teatrale di Maccio Capatonda a Bassano del Grappa" loading="lazy"><div class="event-card-content"><div class="event-date"><span>31</span><span>GEN 2027</span></div><div class="event-details"><span class="event-category">Teatro</span><h3>Maccio Capatonda</h3><p class="event-subtitle">Spettacolo teatrale</p><p>Bassano del Grappa · CMP Arena</p><span class="event-status is-available">Biglietti indicati disponibili</span></div></div></article>
+            <article class="event-card"><img class="event-poster" src="assets/posters/diego-basso-plays-queen.jpg" alt="Locandina di Diego Basso Plays Queen" loading="lazy"><div class="event-card-content"><div class="event-date"><span>31</span><span>GEN 2027</span></div><div class="event-details"><span class="event-category">Musica</span><h3>Diego Basso</h3><p class="event-subtitle">Plays Queen · con Stef Burns</p><p>Mantova · Teatro Sociale</p><p class="event-time">Apertura porte 19:00 · inizio show 20:00</p><span class="event-status is-available">Biglietti indicati disponibili</span></div></div></article>
+          </div>
+        </section>
+        <section class="event-month" aria-labelledby="events-feb-2027">
+          <div class="event-month-heading"><h2 id="events-feb-2027">Febbraio <em>2027</em></h2><span>7 appuntamenti</span></div>
+          <div class="event-grid">
+            <article class="event-card"><img class="event-poster" src="assets/posters/davide-van-de-sfroos.jpg" alt="Locandina di Davide Van De Sfroos e Folkstra ad Asti" loading="lazy"><div class="event-card-content"><div class="event-date"><span>13</span><span>FEB 2027</span></div><div class="event-details"><span class="event-category">Musica</span><h3>Davide Van De Sfroos &amp; Folkstra</h3><p>Asti · Piazza Alfieri, Teatro Alfieri</p><span class="event-status is-available">Biglietti indicati disponibili</span><a class="event-spotify" href="https://open.spotify.com/search/Davide%20Van%20De%20Sfroos" target="_blank" rel="noopener noreferrer">Trova su Spotify <span aria-hidden="true">↗</span></a></div></div></article>
+            <article class="event-card"><img class="event-poster" src="assets/posters/banco-del-mutuo-soccorso.jpg" alt="Locandina dello spettacolo Una storia unica con Banco del Mutuo Soccorso, Of New Trolls e Le Orme" loading="lazy"><div class="event-card-content"><div class="event-date"><span>13</span><span>FEB 2027</span></div><div class="event-details"><span class="event-category">Musica</span><h3>Banco del Mutuo Soccorso, Of New Trolls, Le Orme</h3><p class="event-subtitle">Una storia unica · con Bernardo Lanzetti</p><p>Bassano del Grappa · CMP Arena</p><span class="event-status is-available">Biglietti indicati disponibili</span></div></div></article>
+            <article class="event-card"><img class="event-poster" src="assets/posters/raffaella-carra.jpg" alt="Locandina di Raffaella! Sognando la Carrà con Beatrice Baldaccini" loading="lazy"><div class="event-card-content"><div class="event-date"><span>13</span><span>FEB 2027</span></div><div class="event-details"><span class="event-category">Musical</span><h3>Raffaella! Sognando la Carrà</h3><p class="event-subtitle">Con Beatrice Baldaccini</p><p>Mantova · Teatro Sociale</p><p class="event-time">Ore 21:00</p><span class="event-status is-available">Biglietti indicati disponibili</span></div></div></article>
+            <article class="event-card"><img class="event-poster" src="assets/posters/andrea-pennacchi.jpg" alt="Locandina di Andrea Pennacchi in Alieni in Laguna" loading="lazy"><div class="event-card-content"><div class="event-date"><span>18</span><span>FEB 2027</span></div><div class="event-details"><span class="event-category">Spettacolo</span><h3>Andrea Pennacchi</h3><p class="event-subtitle">Alieni in Laguna</p><p>Mantova · Teatro Sociale</p><p class="event-time">Ore 21:00</p><span class="event-status is-available">Biglietti indicati disponibili</span></div></div></article>
+            <article class="event-card"><img class="event-poster" src="assets/posters/osvaldo-poli.jpg" alt="Locandina di Osvaldo Poli in L'adolescenza non è una malattia" loading="lazy"><div class="event-card-content"><div class="event-date"><span>20</span><span>FEB 2027</span></div><div class="event-details"><span class="event-category">Teatro</span><h3>Osvaldo Poli</h3><p class="event-subtitle">L'adolescenza non è una malattia</p><p>Mantova · Teatro Sociale</p><p class="event-time">Ore 21:00</p><span class="event-status is-available">Biglietti indicati disponibili</span></div></div></article>
+            <article class="event-card"><img class="event-poster" src="assets/posters/abba-dream.jpg" alt="Locandina di ABBA Dream, New Show" loading="lazy"><div class="event-card-content"><div class="event-date"><span>21</span><span>FEB 2027</span></div><div class="event-details"><span class="event-category">Musica</span><h3>ABBA Dream</h3><p class="event-subtitle">New Show</p><p>Mantova · PalaUnical Teatro</p><p class="event-time">Ore 17:30</p><span class="event-status is-available">Biglietti indicati disponibili</span></div></div></article>
+            <article class="event-card"><img class="event-poster" src="assets/posters/paolo-kessisoglu.jpg" alt="Locandina di Paolo Kessisoglu in Sfidati di me" loading="lazy"><div class="event-card-content"><div class="event-date"><span>28</span><span>FEB 2027</span></div><div class="event-details"><span class="event-category">Teatro</span><h3>Paolo Kessisoglu</h3><p class="event-subtitle">Sfidati di me</p><p>Mantova · Teatro Sociale</p><p class="event-time">Ore 17:00</p><span class="event-status is-available">Biglietti indicati disponibili</span></div></div></article>
+          </div>
+        </section>
+        <section class="event-month" aria-labelledby="events-mar-2027">
+          <div class="event-month-heading"><h2 id="events-mar-2027">Marzo <em>2027</em></h2><span>6 appuntamenti</span></div>
+          <div class="event-grid">
+            <article class="event-card"><img class="event-poster" src="assets/posters/vincenzo-schettini.jpg" alt="Locandina di Vincenzo Schettini in Viaggio al centro della fisica" loading="lazy"><div class="event-card-content"><div class="event-date"><span>04</span><span>MAR 2027</span></div><div class="event-details"><span class="event-category">Spettacolo</span><h3>Vincenzo Schettini</h3><p class="event-subtitle">Viaggio al centro della fisica</p><p>Mantova · PalaUnical</p><span class="event-status is-available">Biglietti indicati disponibili</span></div></div></article>
+            <article class="event-card"><img class="event-poster" src="assets/posters/awed-dadda-dose.jpg" alt="Locandina di Awed, Dadda e Dose in Lasciate ogni esperienza voi che entrate" loading="lazy"><div class="event-card-content"><div class="event-date"><span>06</span><span>MAR 2027</span></div><div class="event-details"><span class="event-category">Spettacolo</span><h3>Awed, Dadda e Dose</h3><p class="event-subtitle">Lasciate ogni esperienza voi che entrate</p><p>Mantova · PalaUnical Teatro</p><span class="event-status is-available">Biglietti indicati disponibili</span></div></div></article>
+            <article class="event-card"><img class="event-poster" src="assets/posters/natalino-balasso.jpg" alt="Locandina di Natalino Balasso in Giovanna dei disoccupati" loading="lazy"><div class="event-card-content"><div class="event-date"><span>09</span><span>MAR 2027</span></div><div class="event-details"><span class="event-category">Teatro</span><h3>Natalino Balasso</h3><p class="event-subtitle">Giovanna dei disoccupati</p><p>Mantova · Teatro Sociale</p><p class="event-time">Ore 21:00</p><span class="event-status is-available">Biglietti indicati disponibili</span></div></div></article>
+            <article class="event-card"><img class="event-poster" src="assets/posters/giacobazzi.jpg" alt="Locandina di Osteria Giacobazzi" loading="lazy"><div class="event-card-content"><div class="event-date"><span>13</span><span>MAR 2027</span></div><div class="event-details"><span class="event-category">Comicità</span><h3>Giacobazzi</h3><p class="event-subtitle">Osteria Giacobazzi</p><p>Mantova · Teatro Sociale</p><p class="event-time">Ore 21:00</p><span class="event-status is-available">Biglietti indicati disponibili</span></div></div></article>
+            <article class="event-card"><img class="event-poster" src="assets/posters/francesco-de-gregori.jpg" alt="Locandina del tour teatrale di Francesco De Gregori" loading="lazy"><div class="event-card-content"><div class="event-date"><span>19</span><span>MAR 2027</span></div><div class="event-details"><span class="event-category">Musica</span><h3>Francesco De Gregori</h3><p class="event-subtitle">Nevergreen (Perfette sconosciute)</p><p>Mantova · PalaUnical Teatro</p><p class="event-package-note">Nello screenshot compare anche un pacchetto con Antonello Venditti.</p><span class="event-status is-available">Biglietti indicati disponibili</span></div></div></article>
+            <article class="event-card"><img class="event-poster" src="assets/posters/federico-basso.jpg" alt="Locandina di Federico Basso in Non faccio il bis" loading="lazy"><div class="event-card-content"><div class="event-date"><span>20</span><span>MAR 2027</span></div><div class="event-details"><span class="event-category">Comicità</span><h3>Federico Basso</h3><p class="event-subtitle">Non faccio il bis</p><p>Mantova · Teatro Sociale</p><p class="event-time">Ore 21:00</p><span class="event-status is-available">Biglietti indicati disponibili</span></div></div></article>
+          </div>
+        </section>
+        <section class="event-month" aria-labelledby="events-apr-2027">
+          <div class="event-month-heading"><h2 id="events-apr-2027">Aprile <em>2027</em></h2><span>4 appuntamenti</span></div>
+          <div class="event-grid">
+            <article class="event-card"><img class="event-poster" src="assets/posters/antonello-venditti.jpg" alt="Locandina dello spettacolo di Antonello Venditti" loading="lazy"><div class="event-card-content"><div class="event-date"><span>03</span><span>APR 2027</span></div><div class="event-details"><span class="event-category">Spettacolo</span><h3>Antonello Venditti</h3><p class="event-subtitle">In questo mondo gli esseri più umani…</p><p>Mantova · PalaUnical Teatro</p><span class="event-status is-available">Biglietti indicati disponibili</span></div></div></article>
+            <article class="event-card"><img class="event-poster" src="assets/posters/luca-bono.jpg" alt="Locandina di Luca Bono, L'illusionista" loading="lazy"><div class="event-card-content"><div class="event-date"><span>10</span><span>APR 2027</span></div><div class="event-details"><span class="event-category">Spettacolo</span><h3>Luca Bono</h3><p class="event-subtitle">L'illusionista</p><p>Mantova · Teatro Sociale</p><p class="event-time">Ore 21:00</p><span class="event-status is-available">Biglietti indicati disponibili</span></div></div></article>
+            <article class="event-card"><img class="event-poster" src="assets/posters/alessandro-bergonzoni.jpg" alt="Locandina di Alessandro Bergonzoni in Arrivano i dunque" loading="lazy"><div class="event-card-content"><div class="event-date"><span>17</span><span>APR 2027</span></div><div class="event-details"><span class="event-category">Teatro</span><h3>Alessandro Bergonzoni</h3><p class="event-subtitle">Arrivano i dunque</p><p>Mantova · Teatro Sociale</p><span class="event-status is-available">Biglietti indicati disponibili</span></div></div></article>
+            <article class="event-card"><img class="event-poster" src="assets/posters/ale-e-franz.jpg" alt="Locandina di Ale e Franz in Capitol'ho" loading="lazy"><div class="event-card-content"><div class="event-date"><span>21</span><span>APR 2027</span></div><div class="event-details"><span class="event-category">Comicità</span><h3>Ale e Franz</h3><p class="event-subtitle">Capitol'ho</p><p>Mantova · Teatro Sociale</p><p class="event-time">Ore 20:30</p><span class="event-status is-available">Biglietti indicati disponibili</span></div></div></article>
+          </div>
+        </section>
+        <section class="event-month" aria-labelledby="events-may-2027">
+          <div class="event-month-heading"><h2 id="events-may-2027">Maggio <em>2027</em></h2><span>1 appuntamento</span></div>
+          <div class="event-grid">
+            <article class="event-card"><img class="event-poster" src="assets/posters/roberta-bruzzone.jpg" alt="Locandina di Roberta Bruzzone in Menti in trappola" loading="lazy"><div class="event-card-content"><div class="event-date"><span>22</span><span>MAG 2027</span></div><div class="event-details"><span class="event-category">Teatro</span><h3>Roberta Bruzzone</h3><p class="event-subtitle">Menti in trappola</p><p>Mantova · Teatro Sociale</p><p class="event-time">Ore 21:00</p><span class="event-status is-available">Biglietti indicati disponibili</span></div></div></article>
+          </div>
+        </section>
+        <section class="event-month" aria-labelledby="events-jul-2027">
+          <div class="event-month-heading"><h2 id="events-jul-2027">Luglio <em>2027</em></h2><span>1 appuntamento</span></div>
+          <div class="event-grid">
+            <article class="event-card"><img class="event-poster" src="assets/posters/sting.jpg" alt="Locandina del tour Sting 3.0" loading="lazy"><div class="event-card-content"><div class="event-date"><span>04</span><span>LUG 2027</span></div><div class="event-details"><span class="event-category">Musica</span><h3>Sting</h3><p class="event-subtitle">Sting 3.0</p><p>Asti · Piazza Alfieri</p><span class="event-status is-available">Biglietti indicati disponibili</span></div></div></article>
+          </div>
+        </section>
+        <section class="event-month" aria-labelledby="events-nov-2027">
+          <div class="event-month-heading"><h2 id="events-nov-2027">Novembre <em>2027</em></h2><span>1 appuntamento</span></div>
+          <div class="event-grid">
+            <article class="event-card"><img class="event-poster" src="assets/posters/nino-frassica.jpg" alt="Locandina di Nino Frassica in Novella Bella" loading="lazy"><div class="event-card-content"><div class="event-date"><span>20</span><span>NOV 2027</span></div><div class="event-details"><span class="event-category">Comicità</span><h3>Nino Frassica</h3><p class="event-subtitle">Novella Bella</p><p>Mantova · PalaUnical Teatro</p><span class="event-status is-available">Biglietti indicati disponibili</span></div></div></article>
+          </div>
+        </section>
+        <section class="event-month" aria-labelledby="events-dec-2027">
+          <div class="event-month-heading"><h2 id="events-dec-2027">Dicembre <em>2027</em></h2><span>2 appuntamenti</span></div>
+          <div class="event-grid">
+            <article class="event-card"><img class="event-poster" src="assets/posters/european-cinema-2027.jpg" alt="Locandina de Le Grandi Musiche per il Cinema con The European Orchestra" loading="lazy"><div class="event-card-content"><div class="event-date"><span>04</span><span>DIC 2027</span></div><div class="event-details"><span class="event-category">Musica</span><h3>Le Grandi Musiche per il Cinema</h3><p class="event-subtitle">The European Orchestra · John Williams, Hans Zimmer, Ennio Morricone &amp; more</p><p>Mantova · Teatro Sociale</p><p class="event-time">Inizio show ore 21:00</p><span class="event-status is-refund">Rimborsi indicati nello screenshot</span></div></div></article>
+            <article class="event-card"><img class="event-poster" src="assets/posters/disney-musical-world-2027.jpg" alt="Locandina di Disney Musical World con The European Orchestra" loading="lazy"><div class="event-card-content"><div class="event-date"><span>04</span><span>DIC 2027</span></div><div class="event-details"><span class="event-category">Musical</span><h3>Disney Musical World</h3><p class="event-subtitle">The European Orchestra</p><p>Mantova · Teatro Sociale</p><p class="event-time">Inizio show ore 16:30</p><span class="event-status is-refund">Rimborsi indicati nello screenshot</span></div></div></article>
+          </div>
+        </section>
+        <p class="spotify-note">Le disponibilità e le date sono quelle visibili negli screenshot al momento dell’invio; possono cambiare. Per l’acquisto, usa solo il sito ufficiale dell’evento o del teatro.</p>
+        <aside class="ticket-prototype-promo" aria-labelledby="ticket-promo-title">
+          <div>
+            <span class="event-category">Prototipo interattivo</span>
+            <h2 id="ticket-promo-title">Come potrebbe funzionare la biglietteria?</h2>
+            <p>Prova una selezione di biglietti con prezzi d’esempio. Non è un acquisto e non viene effettuato alcun pagamento.</p>
+          </div>
+          <a class="button button-primary" href="biglietteria.html">Prova la biglietteria <span aria-hidden="true">↗</span></a>
+        </aside>
+      </section>
+      <section class="newsletter section-wrap" aria-labelledby="newsletter-title">
+        <div class="newsletter-copy">
+          <span class="event-category">Promemoria eventi</span>
+          <h2 id="newsletter-title">Le nuove date,<br><em>appena arrivano.</em></h2>
+          <p>Un promemoria via email quando vengono pubblicati nuovi eventi. Iscrizione facoltativa e revocabile in qualsiasi momento.</p>
+        </div>
+        <form class="newsletter-form" id="newsletter-form">
+          <label for="newsletter-email">La tua email</label>
+          <input id="newsletter-email" name="email" type="email" autocomplete="email" placeholder="nome@esempio.it" required>
+          <label class="newsletter-consent" for="newsletter-consent">
+            <input id="newsletter-consent" name="consent" type="checkbox" required>
+            <span>Acconsento a ricevere via email aggiornamenti sui nuovi eventi.</span>
+          </label>
+          <button class="button button-primary" type="submit">Richiedi l’iscrizione <span aria-hidden="true">↗</span></button>
+          <p class="newsletter-disclaimer">Modulo dimostrativo: l’iscrizione sarà attivata solo dopo aver collegato un servizio e pubblicato l’informativa privacy. Inviare il modulo non salva né invia l’indirizzo.</p>
+          <p class="newsletter-status" id="newsletter-status" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <a class="footer-brand" href="index.html">MISTER WOLF <span>EVENTS</span></a>
+      <p>Concerti · Spettacoli · Eventi</p>
+      <a class="back-to-top" href="#contenuto">Torna su <span aria-hidden="true">↑</span></a>
+      <small>© <span id="current-year">2026</span> Mister Wolf Events</small>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Mister Wolf Events//Event Calendar//IT
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:20270421-42@mister-wolf-events
+DTSTAMP:20261112T092807Z
+DTSTART:20270421T183000Z
+SUMMARY:Ale e Franz - Capitol'ho
+LOCATION:Mantova · Teatro Sociale
+DESCRIPTION:Orario indicato: 20:30. Verifica eventuali aggiornamenti sui 
+ canali ufficiali.
+END:VEVENT
+END:VCALENDAR

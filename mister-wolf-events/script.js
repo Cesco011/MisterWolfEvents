@@ -236,6 +236,63 @@ for (const card of eventCardsForTicketing) {
   ticketLink.setAttribute("aria-label", `${ticketLink.textContent}: ${title}, ${date}`);
   details.append(ticketLink);
 
+  const eventIndex = eventCardsForTicketing.indexOf(card);
+  const eventSlug = `${title}-${date}`
+    .toLocaleLowerCase("it-IT")
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "");
+  card.id = `event-${eventIndex + 1}-${eventSlug}`;
+
+  const shareUrl = new URL(window.location.href);
+  shareUrl.search = "";
+  shareUrl.hash = card.id;
+  const shareButton = document.createElement("button");
+  shareButton.className = "event-share-button";
+  shareButton.type = "button";
+  shareButton.textContent = "Condividi";
+  shareButton.setAttribute("aria-label", `Condividi ${title}, ${date}`);
+  const shareStatus = document.createElement("span");
+  shareStatus.className = "event-share-status";
+  shareStatus.setAttribute("role", "status");
+  shareStatus.setAttribute("aria-live", "polite");
+  details.append(shareButton, shareStatus);
+
+  shareButton.addEventListener("click", async () => {
+    if (window.location.protocol === "file:") {
+      shareStatus.textContent = "Apri il sito pubblicato per condividere un link accessibile agli altri.";
+      return;
+    }
+
+    if (typeof navigator.share === "function") {
+      try {
+        await navigator.share({
+          title: subtitle ? `${title} - ${subtitle}` : title,
+          text: `${date} · ${location}`,
+          url: shareUrl.href,
+        });
+        shareStatus.textContent = "";
+        return;
+      } catch (error) {
+        if (error instanceof DOMException && error.name === "AbortError") {
+          return;
+        }
+      }
+    }
+
+    try {
+      if (!navigator.clipboard?.writeText) {
+        throw new Error("La condivisione e gli appunti non sono disponibili in questo browser.");
+      }
+      await navigator.clipboard.writeText(shareUrl.href);
+      shareStatus.textContent = "Link copiato negli appunti.";
+    } catch (error) {
+      console.error("Impossibile condividere o copiare il link dell'evento.", error);
+      shareStatus.textContent = "Condivisione non riuscita. Riprova dal sito pubblicato.";
+    }
+  });
+
   const calendarDate = getCalendarDate(card);
   if (!calendarDate) {
     console.error("Impossibile creare il file calendario: data evento non valida.", card);
@@ -304,6 +361,14 @@ for (const card of eventCardsForTicketing) {
     downloadLink.remove();
     window.setTimeout(() => URL.revokeObjectURL(downloadUrl), 1000);
   });
+}
+
+if (window.location.hash) {
+  const sharedEventId = window.location.hash.slice(1);
+  const sharedEvent = document.getElementById(sharedEventId);
+  if (sharedEvent?.classList.contains("event-card")) {
+    window.requestAnimationFrame(() => sharedEvent.scrollIntoView({ block: "center" }));
+  }
 }
 
 const eventFilters = document.querySelector("#event-filters");

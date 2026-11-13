@@ -3548,6 +3548,53 @@ button:focus-visible {
   font-weight: 500;
 }
 
+.event-card {
+  scroll-margin-top: 100px;
+}
+
+.event-card:target {
+  outline: 2px solid rgba(23, 109, 148, 0.35);
+  outline-offset: 3px;
+}
+
+.event-share-button {
+  display: inline-flex;
+  width: 100%;
+  min-height: 36px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 7px;
+  padding: 5px 11px;
+  border: 1px solid rgba(12, 25, 50, 0.12);
+  border-radius: 5px;
+  background: transparent;
+  color: #56657c;
+  font: inherit;
+  font-size: 9px;
+  font-weight: 700;
+  line-height: 1.4;
+  cursor: pointer;
+  transition: background 160ms ease, color 160ms ease, border-color 160ms ease;
+}
+
+.event-share-button:hover {
+  border-color: rgba(23, 109, 148, 0.35);
+  background: #e8f2f7;
+  color: #0c1932;
+}
+
+.event-share-button:focus-visible {
+  outline: 2px solid #2783a8;
+  outline-offset: 3px;
+}
+
+.event-share-status {
+  display: block;
+  color: #56657c;
+  font-size: 8px;
+  line-height: 1.5;
+}
+
 .events > .spotify-note {
   margin-top: 25px;
   padding-top: 18px;
